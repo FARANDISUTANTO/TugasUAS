@@ -1,0 +1,343 @@
+# Dokumentasi untuk API Metmuseum
+
+## objects [/objects]
+
+### Ambil banyak data dari objects [GET]
+
++ Response 200 (application/json)
+
+    + Body
+    
+        {
+            "total": 475704,
+            "objectIDs": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                56,
+                57,
+                58,
+                59,
+                62,
+                63,
+                64,
+                65,
+                68,
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75,
+
+                ...
+
+
+## search [/objects/search{?title}]
+
+### Mencari nama yang terdapat pada title objects [GET]
+
++ Parameters
+    + title (required)
+        + default : none
+
++ Response 200 (application/json)
+
+    + Body
+    
+        {
+            "total": 727,
+            "objectIDs": [
+                323178,
+                44330,
+                550781,
+                544457,
+                49141,
+                203202,
+                44617,
+                53558,
+                571401,
+                548945,
+                575412,
+                575413,
+                548946,
+                548947,
+                738909,
+                568013,
+                544351,
+                53416,
+                548984,
+                571402,
+                549046,
+                549066,
+                548944,
+                548940,
+                548942,
+                548943,
+                548941,
+                571403,
+                573340,
+                206400,
+                61318,
+                189101,
+                193312,
+                204571,
+                44925,
+                44926,
+                44927,
+                44924,
+                44923,
+                61037,
+                189072,
+                49279,
+                204254,
+                54786,
+                54062,
+                44933,
+                45516,
+                45517,
+                45515,
+                45518,
+                751499,
+                247022,
+                54063,
+                54455,
+                53634,
+                54718,
+                369288,
+                544320,
+                248832,
+                254418,
+                571648,
+                571647,
+                561811,
+                61038,
+                545678,
+                73175,
+                340876,
+                40343,
+                545674,
+                545673,
+                56528,
+                54731,
+            ...    
+
+## objectsID [/objects/{objectsID}]
+
+### Ambil banyak data objectsID dari objects [GET]
+
++ Parameters
+    + objectsID (required)
+
++ Response 200 (application/json)
+
+    + Body
+        {
+            "objectID": 23,
+            "isHighlight": false,
+            "accessionNumber": "16.74.44",
+            "accessionYear": "1916",
+            "isPublicDomain": false,
+            "primaryImage": "",
+            "primaryImageSmall": "",
+            "additionalImages": [],
+            "constituents": null,
+            "department": "The American Wing",
+            "objectName": "Coin",
+            "title": "Coin, 1/4 Real",
+            "culture": "Guatemalan",
+            "period": "",
+            "dynasty": "",
+            "reign": "",
+            "portfolio": "",
+            "artistRole": "",
+            "artistPrefix": "",
+            "artistDisplayName": "",
+            "artistDisplayBio": "",
+            "artistSuffix": "",
+            "artistAlphaSort": "",
+            "artistNationality": "",
+            "artistBeginDate": "",
+            "artistEndDate": "",
+            "artistGender": "",
+            "artistWikidata_URL": "",
+            "artistULAN_URL": "",
+            "objectDate": "1878",
+            "objectBeginDate": 1878,
+            "objectEndDate": 1878,
+            "medium": "Silver",
+            "dimensions": "Diam. 1/2 in. (1.3 cm)",
+            "measurements": [
+                {
+                    "elementName": "Other",
+                    "elementDescription": "Object diameter",
+                    "elementMeasurements": {
+                        "Diameter": 1.27
+                    }
+                }
+            ],
+            "creditLine": "Gift of Mrs. Russell Sage, 1916",
+            "geographyType": "Made in",
+            "city": "",
+            "state": "",
+            "county": "",
+            "country": "Guatemala",
+            "region": "",
+            "subregion": "",
+            "locale": "",
+            "locus": "",
+            "excavation": "",
+            "river": "",
+            "classification": "",
+            "rightsAndReproduction": "",
+            "linkResource": "",
+            "metadataDate": "2021-04-06T04:41:04.967Z",
+            "repository": "Metropolitan Museum of Art, New York, NY",
+            "objectURL": "https://www.metmuseum.org/art/collection/search/23",
+            "tags": null,
+            "objectWikidata_URL": "",
+            "isTimelineWork": false,
+            "GalleryNumber": ""
+        }
+    
+        
+
+## departments [/departments]
+
+### Mengambil data pada departments [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+        {
+            "departments": [
+                {
+                    "departmentId": 1,
+                    "displayName": "American Decorative Arts"
+                },
+                {
+                    "departmentId": 3,
+                    "displayName": "Ancient Near Eastern Art"
+                },
+                {
+                    "departmentId": 4,
+                    "displayName": "Arms and Armor"
+                },
+                {
+                    "departmentId": 5,
+                    "displayName": "Arts of Africa, Oceania, and the Americas"
+                },
+                {
+                    "departmentId": 6,
+                    "displayName": "Asian Art"
+                },
+                {
+                    "departmentId": 7,
+                    "displayName": "The Cloisters"
+                },
+                {
+                    "departmentId": 8,
+                    "displayName": "The Costume Institute"
+                },
+                {
+                    "departmentId": 9,
+                    "displayName": "Drawings and Prints"
+                },
+                {
+                    "departmentId": 10,
+                    "displayName": "Egyptian Art"
+                },
+                {
+                    "departmentId": 11,
+                    "displayName": "European Paintings"
+                },
+                {
+                    "departmentId": 12,
+                    "displayName": "European Sculpture and Decorative Arts"
+                },
+                {
+                    "departmentId": 13,
+                    "displayName": "Greek and Roman Art"
+                },
+                {
+                    "departmentId": 14,
+                    "displayName": "Islamic Art"
+                },
+                {
+                    "departmentId": 15,
+                    "displayName": "The Robert Lehman Collection"
+                },
+                {
+                    "departmentId": 16,
+                    "displayName": "The Libraries"
+                },
+                {
+                    "departmentId": 17,
+                    "displayName": "Medieval Art"
+                },
+                {
+                    "departmentId": 18,
+                    "displayName": "Musical Instruments"
+                },
+                {
+                    "departmentId": 19,
+                    "displayName": "Photographs"
+                },
+                {
+                    "departmentId": 21,
+                    "displayName": "Modern Art"
+                }
+            ]
+        }
