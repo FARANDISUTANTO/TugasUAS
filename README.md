@@ -18,3 +18,5 @@ Pada Web API ini adalah tugas UAS Rekayasa APlikasi Terdistribusi yang menggunak
 ### /objects/objectsID    maka dapat menampilkan data dari objectsID yang telah dipilih
 ### /departments          maka akan mendapatkan list department yang terdapat pada museum
 
+# Documentation
+## https://farandisutanto.docs.apiary.io/#reference/0/departments
